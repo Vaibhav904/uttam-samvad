@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>उत्तम संवाद | सच्ची खबर, स्पष्ट संवाद - ताज़ा हिंदी समाचार</title>
+<meta name="description" content="उत्तम संवाद - राष्ट्रीय, राजनीति, उत्तर प्रदेश, दिल्ली, व्यापार, खेल, मनोरंजन और टेक्नोलॉजी की ताज़ा और भरोसेमंद हिंदी खबरें।">
+<meta name="keywords" content="हिंदी समाचार, ताज़ा खबरें, उत्तम संवाद, राष्ट्रीय खबर, राजनीति, उत्तर प्रदेश, दिल्ली, खेल, बिजनेस">
+<meta property="og:type" content="website">
+<meta property="og:title" content="उत्तम संवाद | सच्ची खबर, स्पष्ट संवाद">
+<meta property="og:description" content="भरोसेमंद हिंदी डिजिटल न्यूज़ और मीडिया प्लेटफ़ॉर्म।">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=70">
+<meta property="og:locale" content="hi_IN">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 1. TOP BAR -->
+<div class="uttam-topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center gap-3">
+      <span><i class="bi bi-calendar3 me-1"></i><span id="uttamToday"></span></span>
+      <span class="uttam-topbar-lang d-none d-sm-inline">हिन्दी</span>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <a href="#" class="d-none d-md-inline">ई-पेपर</a>
+      <a href="#uttamFooter" class="d-none d-md-inline">हमसे संपर्क करें</a>
+      <span class="uttam-topbar-social">
+        <a href="#" aria-label="फेसबुक"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="एक्स"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="यूट्यूब"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="इंस्टाग्राम"><i class="bi bi-instagram"></i></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- 2. HEADER -->
+<header class="uttam-header">
+  <nav class="navbar navbar-expand-xl">
+    <div class="container">
+      <a class="navbar-brand uttam-logo" href="#uttamTop">
+        <span class="uttam-logo-name">उत्तम <em>संवाद</em></span>
+        <span class="uttam-logo-tag">सच्ची खबर, स्पष्ट संवाद</span>
+      </a>
+      <div class="d-flex align-items-center gap-2 order-xl-last">
+        <button class="uttam-search-btn" id="uttamSearchToggle" aria-label="खोजें"><i class="bi bi-search"></i></button>
+        <button class="navbar-toggler uttam-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#uttamMenu" aria-controls="uttamMenu" aria-expanded="false" aria-label="मेन्यू"><i class="bi bi-list"></i></button>
+      </div>
+      <div class="collapse navbar-collapse" id="uttamMenu">
+        <ul class="navbar-nav uttam-menu ms-xl-4 me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#uttamTop">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">राष्ट्रीय</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">राजनीति</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">उत्तर प्रदेश</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">दिल्ली</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">व्यापार</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">खेल</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">मनोरंजन</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">टेक्नोलॉजी</a></li>
+          <li class="nav-item"><a class="nav-link" href="#uttamCategories">स्वास्थ्य</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">और</a>
+            <ul class="dropdown-menu uttam-dropdown">
+              <li><a class="dropdown-item" href="#uttamVideo">वीडियो</a></li>
+              <li><a class="dropdown-item" href="#uttamGallery">फोटो गैलरी</a></li>
+              <li><a class="dropdown-item" href="#uttamOpinion">विचार</a></li>
+              <li><a class="dropdown-item" href="#uttamNewsletter">न्यूज़लेटर</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="uttam-search-panel" id="uttamSearchPanel">
+    <div class="container">
+      <form class="d-flex gap-2" id="uttamSearchForm" role="search">
+        <input type="search" class="form-control uttam-search-input" id="uttamSearchInput" placeholder="खबर, विषय या शहर खोजें..." aria-label="खोजें">
+        <button class="btn uttam-btn-red" type="submit">खोजें</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- 3. BREAKING NEWS -->
+<div class="uttam-breaking-news" id="uttamTop">
+  <div class="container d-flex align-items-stretch">
+    <span class="uttam-breaking-label"><i class="bi bi-broadcast me-2"></i>ब्रेकिंग न्यूज़</span>
+    <div class="uttam-ticker-window">
+      <div class="uttam-ticker-track" id="uttamTickerTrack">
+        <a href="#uttamHero">संसद का शीतकालीन सत्र 1 दिसंबर से शुरू होगा, सरकार ने जारी किया विधायी एजेंडा</a>
+        <a href="#uttamLatest">लखनऊ में नए मेट्रो कॉरिडोर का उद्घाटन, रोज़ाना 2 लाख यात्रियों को मिलेगी सुविधा</a>
+        <a href="#uttamLatest">सेंसेक्स 600 अंक चढ़ा, निवेशकों की संपत्ति में एक दिन में 3 लाख करोड़ की बढ़ोतरी</a>
+        <a href="#uttamLatest">दिल्ली-NCR में वायु गुणवत्ता 'खराब' श्रेणी में, ग्रैप के पहले चरण की पाबंदियां लागू</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- 4. HERO -->
+<section class="uttam-hero" id="uttamHero" aria-label="मुख्य खबरें">
+  <div class="container">
+    <div class="row g-3 g-lg-4">
+      <div class="col-lg-8">
+        <article class="uttam-hero-main">
+          <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1200&q=70" alt="संसद भवन के बाहर सुरक्षा और मीडिया की मौजूदगी" loading="eager">
+          <div class="uttam-hero-caption">
+            <span class="uttam-badge uttam-badge-red">राष्ट्रीय</span>
+            <h1><a href="#">सरकार ने पेश की राष्ट्रीय डिजिटल सुरक्षा नीति, हर नागरिक के डेटा की सुरक्षा होगी प्राथमिकता</a></h1>
+            <p>केंद्रीय मंत्रिमंडल की बैठक में मंज़ूर नई नीति के तहत सभी सरकारी और निजी संस्थानों के लिए डेटा सुरक्षा के कड़े मानक तय किए गए हैं।</p>
+            <time datetime="2026-10-06T09:30">आज, सुबह 9:30 बजे</time>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 d-flex flex-column gap-3 gap-lg-4">
+        <article class="uttam-hero-side">
+          <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=700&q=70" alt="दिल्ली में इंडिया गेट का दृश्य" loading="lazy">
+          <div class="uttam-hero-caption">
+            <span class="uttam-badge">दिल्ली</span>
+            <h2><a href="#">दिल्ली में सर्दी की दस्तक, तापमान 12 डिग्री तक गिरा</a></h2>
+            <time datetime="2026-10-06T08:15">आज, सुबह 8:15 बजे</time>
+          </div>
+        </article>
+        <article class="uttam-hero-side">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=70" alt="स्टेडियम में क्रिकेट मैच का रोमांचक पल" loading="lazy">
+          <div class="uttam-hero-caption">
+            <span class="uttam-badge">खेल</span>
+            <h2><a href="#">भारत ने रोमांचक मुकाबले में जीती टी20 सीरीज़</a></h2>
+            <time datetime="2026-10-05T22:40">कल, रात 10:40 बजे</time>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. LATEST + 7. TRENDING -->
+<section class="uttam-latest" id="uttamLatest">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <h2 class="uttam-section-heading">ताज़ा खबरें</h2>
+        <div class="row g-3 g-md-4">
+          <div class="col-sm-6"><article class="uttam-news-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=70" alt="शेयर बाजार के चार्ट" loading="lazy">
+            <div class="uttam-news-body"><span class="uttam-news-cat">व्यापार</span>
+            <h3><a href="#">सेंसेक्स ने रचा नया रिकॉर्ड, बैंकिंग शेयरों में जोरदार तेजी</a></h3>
+            <p>आईटी और बैंकिंग क्षेत्र की मज़बूती से बाज़ार ने लगातार चौथे दिन बढ़त दर्ज की।</p>
+            <div class="uttam-news-meta"><time>2 घंटे पहले</time><a href="#">और पढ़ें</a></div></div></article></div>
+          <div class="col-sm-6"><article class="uttam-news-card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=70" alt="डिजिटल नेटवर्क और टेक्नोलॉजी का प्रतीक" loading="lazy">
+            <div class="uttam-news-body"><span class="uttam-news-cat">टेक्नोलॉजी</span>
+            <h3><a href="#">भारत में 6G परीक्षण शुरू, 2030 तक व्यावसायिक सेवा का लक्ष्य</a></h3>
+            <p>दूरसंचार विभाग ने तीन शहरों में पायलट प्रोजेक्ट की घोषणा की है।</p>
+            <div class="uttam-news-meta"><time>3 घंटे पहले</time><a href="#">और पढ़ें</a></div></div></article></div>
+          <div class="col-sm-6"><article class="uttam-news-card">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=600&q=70" alt="उत्तर प्रदेश के शहर की सड़कें और इमारतें" loading="lazy">
+            <div class="uttam-news-body"><span class="uttam-news-cat">उत्तर प्रदेश</span>
+            <h3><a href="#">यूपी में 75 जिलों में बनेंगे नए औद्योगिक पार्क, हजारों को मिलेगा रोज़गार</a></h3>
+            <p>मुख्यमंत्री ने निवेशकों के साथ बैठक में कई बड़े समझौतों की जानकारी दी।</p>
+            <div class="uttam-news-meta"><time>4 घंटे पहले</time><a href="#">और पढ़ें</a></div></div></article></div>
+          <div class="col-sm-6"><article class="uttam-news-card">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=70" alt="डॉक्टर मरीज की जांच करते हुए" loading="lazy">
+            <div class="uttam-news-body"><span class="uttam-news-cat">स्वास्थ्य</span>
+            <h3><a href="#">मौसम बदलने के साथ बढ़े वायरल बुखार के मामले, विशेषज्ञों की सलाह</a></h3>
+            <p>अस्पतालों में ओपीडी की संख्या बढ़ी, बच्चों और बुज़ुर्गों को सावधानी की जरूरत।</p>
+            <div class="uttam-news-meta"><time>5 घंटे पहले</time><a href="#">और पढ़ें</a></div></div></article></div>
+          <div class="col-sm-6"><article class="uttam-news-card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=70" alt="सिनेमा हॉल में फिल्म का दृश्य" loading="lazy">
+            <div class="uttam-news-body"><span class="uttam-news-cat">मनोरंजन</span>
+            <h3><a href="#">इस शुक्रवार रिलीज़ होगी बहुप्रतीक्षित फिल्म, एडवांस बुकिंग में भारी भीड़</a></h3>
+            <p>पहले दिन रिकॉर्ड कमाई की उम्मीद, देशभर में 4,000 से ज़्यादा स्क्रीन पर प्रदर्शन।</p>
+            <div class="uttam-news-meta"><time>6 घंटे पहले</time><a href="#">और पढ़ें</a></div></div></article></div>
+          <div class="col-sm-6"><article class="uttam-news-card">
+            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=70" alt="राजनीतिक सम्मेलन में मंच और श्रोता" loading="lazy">
+            <div class="uttam-news-body"><span class="uttam-news-cat">राजनीति</span>
+            <h3><a href="#">विपक्षी दलों की बैठक में साझा न्यूनतम कार्यक्रम पर बनी सहमति</a></h3>
+            <p>सीट बंटवारे और साझा घोषणापत्र को लेकर अगली बैठक अगले सप्ताह होगी।</p>
+            <div class="uttam-news-meta"><time>7 घंटे पहले</time><a href="#">और पढ़ें</a></div></div></article></div>
+        </div>
+      </div>
+      <aside class="col-lg-4" aria-label="सबसे ज्यादा पढ़ी गई खबरें">
+        <div class="uttam-trending">
+          <h2 class="uttam-section-heading">सबसे ज्यादा पढ़ी गई खबरें</h2>
+          <ol class="uttam-trending-list">
+            <li><span>01</span><a href="#">नई डिजिटल सुरक्षा नीति: क्या बदलेगा आम नागरिकों के लिए</a></li>
+            <li><span>02</span><a href="#">सर्दियों में बढ़ेगा प्रदूषण, दिल्ली-NCR के लिए एडवाइज़री जारी</a></li>
+            <li><span>03</span><a href="#">टी20 सीरीज़ जीत के बाद टीम इंडिया की रैंकिंग में बड़ा उछाल</a></li>
+            <li><span>04</span><a href="#">सोने-चांदी के दाम में गिरावट, जानिए आज के ताज़ा भाव</a></li>
+            <li><span>05</span><a href="#">यूपी बोर्ड परीक्षा कार्यक्रम घोषित, फरवरी से शुरू होंगी परीक्षाएं</a></li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CATEGORIES -->
+<section class="uttam-categories" id="uttamCategories">
+  <div class="container">
+    <h2 class="uttam-section-heading">श्रेणी के अनुसार खबरें</h2>
+    <div class="row g-3 g-md-4">
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-blue"><h3><i class="bi bi-flag-fill"></i>राष्ट्रीय खबरें</h3><ul>
+        <li><a href="#">नई शिक्षा नीति के तहत स्कूलों में बदलेगा पाठ्यक्रम</a></li>
+        <li><a href="#">रेलवे ने शुरू की 50 नई वंदे भारत ट्रेनें</a></li>
+        <li><a href="#">सुप्रीम कोर्ट ने पर्यावरण मामले में मांगा जवाब</a></li>
+        <li><a href="#">सीमा क्षेत्रों में नई सड़क परियोजनाओं को मंज़ूरी</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-red"><h3><i class="bi bi-mic-fill"></i>राजनीति</h3><ul>
+        <li><a href="#">चुनाव आयोग ने जारी किया उपचुनाव का कार्यक्रम</a></li>
+        <li><a href="#">राज्यसभा में पेश होगा नया विधेयक</a></li>
+        <li><a href="#">गठबंधन की रणनीति पर दलों में मंथन तेज़</a></li>
+        <li><a href="#">मुख्यमंत्रियों की बैठक में केंद्र से मांगी अतिरिक्त मदद</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-blue"><h3><i class="bi bi-geo-alt-fill"></i>उत्तर प्रदेश</h3><ul>
+        <li><a href="#">वाराणसी में गंगा घाटों का सौंदर्यीकरण पूरा</a></li>
+        <li><a href="#">नोएडा में बनेगा नया अंतरराष्ट्रीय क्रिकेट स्टेडियम</a></li>
+        <li><a href="#">किसानों के खाते में पहुंची सम्मान निधि की किस्त</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-red"><h3><i class="bi bi-building"></i>दिल्ली NCR</h3><ul>
+        <li><a href="#">दिल्ली मेट्रो फेज़-4 के नए खंड पर ट्रायल रन</a></li>
+        <li><a href="#">गाज़ियाबाद में जलभराव से राहत के लिए नई योजना</a></li>
+        <li><a href="#">गुरुग्राम में ट्रैफिक जाम कम करने को नए फ्लाईओवर</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-red"><h3><i class="bi bi-graph-up-arrow"></i>बिजनेस</h3><ul>
+        <li><a href="#">रिज़र्व बैंक ने रेपो रेट को स्थिर रखा</a></li>
+        <li><a href="#">स्टार्टअप्स में रिकॉर्ड विदेशी निवेश की उम्मीद</a></li>
+        <li><a href="#">त्योहारी सीज़न में ऑटो बिक्री में 18% उछाल</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-blue"><h3><i class="bi bi-trophy-fill"></i>खेल</h3><ul>
+        <li><a href="#">हॉकी टीम की एशियाई खेलों के लिए घोषणा</a></li>
+        <li><a href="#">बैडमिंटन में भारतीय जोड़ी फाइनल में पहुंची</a></li>
+        <li><a href="#">आईएसएल में रोमांचक ड्रॉ पर छूटा मुकाबला</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-red"><h3><i class="bi bi-film"></i>मनोरंजन</h3><ul>
+        <li><a href="#">राष्ट्रीय फिल्म पुरस्कारों की सूची जारी</a></li>
+        <li><a href="#">ओटीटी पर इस सप्ताह आएंगी ये नई वेब सीरीज़</a></li>
+        <li><a href="#">संगीत समारोह में उमड़ी हज़ारों की भीड़</a></li></ul></article></div>
+      <div class="col-md-6 col-xl-3"><article class="uttam-category-card uttam-cat-blue"><h3><i class="bi bi-cpu-fill"></i>टेक्नोलॉजी</h3><ul>
+        <li><a href="#">नए स्मार्टफोन में आएगा सैटेलाइट कनेक्टिविटी फीचर</a></li>
+        <li><a href="#">एआई आधारित अनुवाद टूल अब 22 भारतीय भाषाओं में</a></li>
+        <li><a href="#">साइबर ठगी से बचने के लिए सरकार की नई गाइडलाइन</a></li></ul></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. VIDEO -->
+<section class="uttam-video" id="uttamVideo">
+  <div class="container">
+    <h2 class="uttam-section-heading uttam-heading-light">वीडियो न्यूज़</h2>
+    <div class="row g-3 g-md-4">
+      <div class="col-md-4"><article class="uttam-video-card">
+        <div class="uttam-video-thumb"><img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&w=700&q=70" alt="समाचार रिपोर्टिंग का वीडियो थंबनेल" loading="lazy">
+        <button class="uttam-play-btn" aria-label="वीडियो चलाएं"><i class="bi bi-play-fill"></i></button><span class="uttam-video-time">04:32</span></div>
+        <h3>ग्राउंड रिपोर्ट: बाढ़ प्रभावित गांवों में राहत कार्य की स्थिति</h3></article></div>
+      <div class="col-md-4"><article class="uttam-video-card">
+        <div class="uttam-video-thumb"><img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=700&q=70" alt="न्यूज़ डिबेट स्टूडियो का वीडियो थंबनेल" loading="lazy">
+        <button class="uttam-play-btn" aria-label="वीडियो चलाएं"><i class="bi bi-play-fill"></i></button><span class="uttam-video-time">12:08</span></div>
+        <h3>संवाद विशेष: बजट से पहले आम आदमी की उम्मीदें क्या हैं?</h3></article></div>
+      <div class="col-md-4"><article class="uttam-video-card">
+        <div class="uttam-video-thumb"><img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=700&q=70" alt="प्रेस कॉन्फ्रेंस का वीडियो थंबनेल" loading="lazy">
+        <button class="uttam-play-btn" aria-label="वीडियो चलाएं"><i class="bi bi-play-fill"></i></button><span class="uttam-video-time">02:45</span></div>
+        <h3>प्रेस कॉन्फ्रेंस: स्वास्थ्य मंत्री ने बताया नई योजना का पूरा ब्योरा</h3></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. GALLERY -->
+<section class="uttam-gallery" id="uttamGallery">
+  <div class="container">
+    <h2 class="uttam-section-heading">फोटो गैलरी</h2>
+    <div class="uttam-gallery-grid">
+      <button class="uttam-gallery-item uttam-gallery-wide" data-uttam-full="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1400&q=80" data-uttam-cap="इंडिया गेट पर सुबह का नज़ारा"><img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=700&q=70" alt="इंडिया गेट पर सुबह का नज़ारा" loading="lazy"></button>
+      <button class="uttam-gallery-item" data-uttam-full="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1400&q=80" data-uttam-cap="स्टेडियम में क्रिकेट का रोमांच"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=500&q=70" alt="स्टेडियम में क्रिकेट का रोमांच" loading="lazy"></button>
+      <button class="uttam-gallery-item" data-uttam-full="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1400&q=80" data-uttam-cap="शहर की रफ़्तार"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=500&q=70" alt="शहर की रफ़्तार" loading="lazy"></button>
+      <button class="uttam-gallery-item" data-uttam-full="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1400&q=80" data-uttam-cap="सम्मेलन में विचार-विमर्श"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=500&q=70" alt="सम्मेलन में विचार-विमर्श" loading="lazy"></button>
+      <button class="uttam-gallery-item uttam-gallery-wide" data-uttam-full="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1400&q=80" data-uttam-cap="सिनेमा की दुनिया"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=700&q=70" alt="सिनेमा की दुनिया" loading="lazy"></button>
+      <button class="uttam-gallery-item" data-uttam-full="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80" data-uttam-cap="डिजिटल इंडिया की तस्वीर"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=70" alt="डिजिटल इंडिया की तस्वीर" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- 10. OPINION -->
+<section class="uttam-opinion" id="uttamOpinion">
+  <div class="container">
+    <h2 class="uttam-section-heading">विचार</h2>
+    <div class="row g-3 g-md-4">
+      <div class="col-md-4"><article class="uttam-opinion-card">
+        <div class="uttam-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=70" alt="लेखक डॉ. राजीव मिश्रा का चित्र" loading="lazy"><div><strong>डॉ. राजीव मिश्रा</strong><span>राजनीतिक विश्लेषक</span></div></div>
+        <h3>गठबंधन की राजनीति में मतदाता की बदलती भूमिका</h3>
+        <p>आज का मतदाता केवल नारों से नहीं, काम के हिसाब से फैसला करता है। यही बदलाव आने वाले चुनावों की दिशा तय करेगा।</p>
+        <a href="#" class="uttam-btn-outline">लेख पढ़ें</a></article></div>
+      <div class="col-md-4"><article class="uttam-opinion-card">
+        <div class="uttam-author"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=70" alt="लेखिका अनीता सक्सेना का चित्र" loading="lazy"><div><strong>अनीता सक्सेना</strong><span>अर्थशास्त्री</span></div></div>
+        <h3>महंगाई और मध्यम वर्ग: बजट से क्या उम्मीद रखें</h3>
+        <p>रसोई से लेकर शिक्षा तक बढ़ते खर्च के बीच नीति-निर्माताओं को मध्यम वर्ग की बचत पर ध्यान देना होगा।</p>
+        <a href="#" class="uttam-btn-outline">लेख पढ़ें</a></article></div>
+      <div class="col-md-4"><article class="uttam-opinion-card">
+        <div class="uttam-author"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=160&q=70" alt="लेखक संदीप वर्मा का चित्र" loading="lazy"><div><strong>संदीप वर्मा</strong><span>वरिष्ठ पत्रकार</span></div></div>
+        <h3>डिजिटल युग में पत्रकारिता की विश्वसनीयता की चुनौती</h3>
+        <p>खबरों की रफ़्तार के दौर में सच की पुष्टि सबसे बड़ा दायित्व है, और यही किसी मीडिया संस्थान की असली पूंजी है।</p>
+        <a href="#" class="uttam-btn-outline">लेख पढ़ें</a></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. NEWSLETTER -->
+<section class="uttam-newsletter" id="uttamNewsletter">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h2>हर जरूरी खबर सीधे अपने इनबॉक्स में पाएं</h2>
+        <p>रोज़ सुबह की प्रमुख खबरें, एक संक्षिप्त ईमेल में। कभी भी सदस्यता छोड़ सकते हैं।</p>
+      </div>
+      <div class="col-lg-6">
+        <form id="uttamNewsletterForm" novalidate>
+          <div class="input-group">
+            <input type="email" class="form-control uttam-newsletter-input" id="uttamEmail" placeholder="आपका ईमेल पता" aria-label="ईमेल पता" required>
+            <button class="btn uttam-btn-red" type="submit">सब्सक्राइब करें</button>
+          </div>
+          <div class="uttam-form-message" id="uttamFormMessage" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 12. FOOTER -->
+<footer class="uttam-footer" id="uttamFooter">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <h2 class="uttam-footer-brand">उत्तम संवाद</h2>
+        <p class="uttam-footer-tag">सच्ची खबर, स्पष्ट संवाद</p>
+        <p>उत्तम संवाद एक हिंदी डिजिटल न्यूज़ और मीडिया प्लेटफ़ॉर्म है, जो तथ्यों पर आधारित, निष्पक्ष और समय पर खबरें पाठकों तक पहुंचाता है।</p>
+      </div>
+      <div class="col-lg-2 col-6 col-md-3">
+        <h3>महत्वपूर्ण लिंक</h3>
+        <ul><li><a href="#">About Uttam Samvad</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li><a href="#">Disclaimer</a></li><li><a href="#">Contact Us</a></li></ul>
+      </div>
+      <div class="col-lg-2 col-6 col-md-3">
+        <h3>न्यूज़ कैटेगरी</h3>
+        <ul><li><a href="#uttamCategories">राष्ट्रीय</a></li><li><a href="#uttamCategories">राजनीति</a></li><li><a href="#uttamCategories">व्यापार</a></li><li><a href="#uttamCategories">खेल</a></li><li><a href="#uttamCategories">मनोरंजन</a></li></ul>
+      </div>
+      <div class="col-lg-2 col-6 col-md-6">
+        <h3>संपर्क</h3>
+        <ul class="uttam-footer-contact"><li><i class="bi bi-geo-alt"></i>लखनऊ, उत्तर प्रदेश</li><li><i class="bi bi-telephone"></i>+91 00000 00000</li><li><i class="bi bi-envelope"></i>info@uttamsamvad.in</li></ul>
+      </div>
+      <div class="col-lg-2 col-6 col-md-6">
+        <h3>सोशल मीडिया</h3>
+        <div class="uttam-footer-social">
+          <a href="#" aria-label="फेसबुक"><i class="bi bi-facebook"></i></a><a href="#" aria-label="एक्स"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="यूट्यूब"><i class="bi bi-youtube"></i></a><a href="#" aria-label="इंस्टाग्राम"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="uttam-copyright">© 2026 उत्तम संवाद। सर्वाधिकार सुरक्षित।</div>
+  </div>
+</footer>
+
+<button class="uttam-back-top" id="uttamBackTop" aria-label="ऊपर जाएं"><i class="bi bi-arrow-up"></i></button>
+
+<div class="modal fade uttam-lightbox" id="uttamLightbox" tabindex="-1" aria-label="फोटो देखें" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white uttam-lightbox-close" data-bs-dismiss="modal" aria-label="बंद करें"></button>
+      <img src="" alt="" id="uttamLightboxImg">
+      <p id="uttamLightboxCap"></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
